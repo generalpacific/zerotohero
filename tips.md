@@ -21,3 +21,4 @@
   likelhood.
 * Make sure `requires_grad` is set for the tensors you are using.
 * When updating gradients you are updating the data in the parameters.
+* `torch.nograd` decorator disables tracking the gradient.
