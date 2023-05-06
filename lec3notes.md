@@ -30,3 +30,14 @@
 
 * `BatchNorm`
   * Standardize the hidden activations so that they are roughly Gaussian.
+
+* Recall: why the bias adding is removed after Batchnorm in the code?
+
+* Summary
+  * Covered importance of activations, gradients and their statistics.
+  * Fixed the initial weights and biases to fix the hockey stick like loss
+    reduction and hence achieved better accuracy by reducing the wasteful
+    training work.
+  * You want roughly guassian activations through out the neural net.
+  * Normalization layer to deal with the above the issues.
+  * 
