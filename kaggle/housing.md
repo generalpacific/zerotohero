@@ -42,3 +42,23 @@ v0.3.1
 ```
 * Score on kaggle: 11.98479
 
+v0.3.2
+* Dense1024 -> Dense512 -> Dense256 -> Dense1
+* Epochs 100, Batch size 4
+* changed metric to rmse
+* reduced epochs since training is slow.
+```
+365/365 [==============================] - 6s 16ms/step - loss: 17447032.0000 - rmse: 4176.9644
+
+```
+* Score on kaggle: 2.68224
+
+
+v0.3.3
+* Dense1024 -> Dense512 -> Dense256 -> Dense1
+* Epochs 100, Batch size 4
+* added validation split
+```
+329/329 [==============================] - 6s 17ms/step - loss: 18926792.0000 - rmse: 4350.4932 - val_loss: 39332612.0000 - val_rmse: 6271.5718
+```
+* Score on kaggle: 11.32143
