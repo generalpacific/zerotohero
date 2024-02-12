@@ -62,3 +62,14 @@ v0.3.3
 329/329 [==============================] - 6s 17ms/step - loss: 18926792.0000 - rmse: 4350.4932 - val_loss: 39332612.0000 - val_rmse: 6271.5718
 ```
 * Score on kaggle: 11.32143
+
+v0.3.4
+* Dense2024 -> Dense1024 -> Dense 512 -> Dense256 -> Dense1
+* Epochs 1000, Batch size 4
+* REMOVED  validation split
+```
+Epoch 1000/1000
+365/365 [==============================] - 21s 58ms/step - loss: 0.0063 - rmse: 0.0793
+
+```
+* Score on kaggle: 11.92316
