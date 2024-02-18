@@ -73,3 +73,21 @@ Epoch 1000/1000
 
 ```
 * Score on kaggle: 11.92316
+
+v0.3.5
+* Dense2024 -> Dense1024 -> Dense 512 -> Dense256 -> Dense1
+* Epochs 100, Batch size 4
+```
+365/365 [==============================] - 23s 63ms/step - loss: 0.0100 - rmse: 0.0998
+
+```
+* Score on kaggle: 12.00103 
+
+v0.3.6
+* Dense2024 -> Dense1024 -> Dense 512 -> Dense256 -> Dense1
+* Epochs 100, Batch size 4
+* Use standardScalar in preprocessing.
+```
+365/365 [==============================] - 23s 64ms/step - loss: 0.0219 - rmse: 0.1480
+```
+* Score on kaggle:11:84059 
