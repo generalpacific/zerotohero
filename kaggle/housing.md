@@ -91,3 +91,32 @@ v0.3.6
 365/365 [==============================] - 23s 64ms/step - loss: 0.0219 - rmse: 0.1480
 ```
 * Score on kaggle:11:84059 
+
+v0.4.0
+* Dense2024 -> Dense1024 -> Dense 512 -> Dense256 -> Dense1
+* Epochs 100, Batch size 32
+* Fix major bug: sale prices should not be normalized
+```
+46/46 [==============================] - 1s 26ms/step - loss: 591522112.0000 - rmse: 24321.2285
+
+```
+* Score on kaggle: 0.34258 
+
+
+v0.4.1
+* Dense4048 -> Dense2024 -> Dense1024 -> Dense 512 -> Dense256 -> Dense1
+* Epochs 100, Batch size 32
+```
+Epoch 100/100
+46/46 [==============================] - 4s 82ms/step - loss: 586401344.0000 - rmse: 24215.7246
+```
+* Score on kaggle: 0.18641 
+
+v0.4.2
+* Dense 8096 -> Dense4048 -> Dense2024 -> Dense1024 -> Dense 512 -> Dense256 -> Dense1
+* Epochs 100, Batch size 32
+```
+Epoch 100/100
+46/46 [==============================] - 45s 972ms/step - loss: 746845376.0000 - rmse: 27328.4727
+```
+* Score on kaggle: 0.21955 
