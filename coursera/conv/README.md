@@ -35,3 +35,8 @@
   * Score thresholding on the probability of detecting a class to keep only accurate (high probability) boxes
   * Intersection over Union (IoU) thresholding to eliminate overlapping boxes
 * Because training a YOLO model from randomly initialized weights is non-trivial and requires a large dataset as well as lot of computation, previously trained model parameters were used in this exercise. If you wish, you can also try fine-tuning the YOLO model with your own dataset, though this would be a fairly non-trivial exercise.
+
+
+* Semantic image segmentation predicts a label for every single pixel in an image
+* U-Net uses an equal number of convolutional blocks and transposed convolutions for downsampling and upsampling
+* Skip connections are used to prevent border pixel information loss and overfitting in U-Net
