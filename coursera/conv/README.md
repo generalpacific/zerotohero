@@ -40,3 +40,7 @@
 * Semantic image segmentation predicts a label for every single pixel in an image
 * U-Net uses an equal number of convolutional blocks and transposed convolutions for downsampling and upsampling
 * Skip connections are used to prevent border pixel information loss and overfitting in U-Net
+
+* Face verification solves an easier 1:1 matching problem; face recognition addresses a harder 1:K matching problem.
+* Triplet loss is an effective loss function for training a neural network to learn an encoding of a face image.
+* The same encoding can be used for verification and recognition. Measuring distances between two images' encodings allows you to determine whether they are pictures of the same person.
