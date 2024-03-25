@@ -44,3 +44,19 @@
 * Face verification solves an easier 1:1 matching problem; face recognition addresses a harder 1:K matching problem.
 * Triplet loss is an effective loss function for training a neural network to learn an encoding of a face image.
 * The same encoding can be used for verification and recognition. Measuring distances between two images' encodings allows you to determine whether they are pictures of the same person.
+
+
+* The content cost takes a hidden layer activation of the neural network, and measures how different  𝑎(𝐶) and  𝑎(𝐺) are.
+* When you minimize the content cost later, this will help make sure  𝐺 has similar content as  C.
+
+* The style of an image can be represented using the Gram matrix of a hidden layer's activations.
+* You get even better results by combining this representation from multiple different layers.
+* This is in contrast to the content representation, where usually using just a single hidden layer is sufficient.
+* Minimizing the style cost will cause the image  𝐺 to follow the style of the image  𝑆.
+
+
+* Neural Style Transfer is an algorithm that given a content image C and a style image S can generate an artistic image
+* It uses representations (hidden layer activations) based on a pretrained ConvNet.
+* The content cost function is computed using one hidden layer's activations.
+* The style cost function for one layer is computed using the Gram matrix of that layer's activations. The overall style cost function is obtained using several hidden layers.
+* Optimizing the total cost function results in synthesizing new images.
